@@ -204,8 +204,8 @@ def handle(update):
 				queue["free"].remove(partner)
 				queue["occupied"][uid] = partner
 				queue["occupied"][partner] = uid
-				bot.sendMessage(uid, f'🤖 *Bot :* 🎉 _Selamat Pasangan kamu telah ditemukan..._',parse_mode='MarkDown', reply_markup=keyboard)
-				bot.sendMessage(partner, f'🤖 *Bot :* 🎉 _Selamat Pasangan kamu telah ditemukann..._',parse_mode='MarkDown', reply_markup=keyboard)
+				bot.sendMessage(uid, f'🤖 *Bot :* 🎉 _Selamat Pasangan kamu telah ditemukan...\n\n/next - mencari pasangan baru\n/exit - keluar obrolan_',parse_mode='MarkDown', reply_markup=keyboard)
+				bot.sendMessage(partner, f'🤖 *Bot :* 🎉 _Selamat Pasangan kamu telah ditemukann...\n\n/next - mencari pasangan baru\n/exit - keluar obrolan_',parse_mode='MarkDown', reply_markup=keyboard)
 	except 	Exception as e:
 		print('[!] Error: ' + str(e))
 
