@@ -41,6 +41,11 @@
       "required": false,
       "value": ""
     },
+    "FTRRRRRBT": {
+      "description": "Isi FTRRRRRBT",
+      "required": false,
+      "value": ""
+    },
     "CHANNEL": {
       "description": "Isi dengan username channel kalian tanpa tanda @ (kalo gak di rubah gapapa)",
       "required": false,
