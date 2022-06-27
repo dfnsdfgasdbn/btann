@@ -11,7 +11,7 @@ import json
 from glob import glob
 import pytz
 from datetime import datetime
-from config import TOKEN, ADMIN, OWNER, DONASI, CHANNEL, GROUP_CHAT, PROJECT_NAME
+from config import TOKEN, ADMIN, OWNER, DONASI, CHANNEL, GROUP_CHAT, FTRRRRRBT, PROJECT_NAME
 
 token = TOKEN
 bot = amanobot.Bot(token)
@@ -101,7 +101,7 @@ def handle(update):
 
 		if text == "/start" or text == "/refresh":
 			if not uid in queue["occupied"]:
-				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="📣 Channel", url=f"https://t.me/{CHANNEL}")]])
+				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="Channel", url=f"https://t.me/{CHANNEL}"),InlineKeyboardButton(text="Fitur", url=f"https://t.me/{FTRRRRRBT}")]])
 				bot.sendMessage(uid, f"👋🏻 Hai Selamat Datang \n\n_💬 Untuk mencari pasangan gunakan perintah /search_", parse_mode='MarkDown', disable_web_page_preview=True , reply_markup=keyboard)
 		if 'message_id' in update:
 			if not uid in queue["occupied"]:
